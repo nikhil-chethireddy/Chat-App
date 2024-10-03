@@ -9,7 +9,7 @@ const useConnectSocket = (authUser) => {
 
   useEffect(() => {
     if (authUser) {
-      const socket = io("http://localhost:5000/", {
+      const socket = io("https://chat-app-1g5w.onrender.com", {
         query: {
           userId: authUser._id,
         },
